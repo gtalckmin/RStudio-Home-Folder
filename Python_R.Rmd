@@ -1,0 +1,41 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{python}
+import pandas as pd
+import matplotlib as plt
+import numpy as np
+import seaborn
+```
+
+```{r}
+reticulate::conda_install(packages="matplotlib")
+# reticulate::py_install("seaborn")
+# reticulate::use_python("/usr/local/bin/python")
+# reticulate::use_condaenv("gee-demo", conda = "auto",required = TRUE)
+```
+
+```{r}
+
+reticulate::conda_install(packages = "earthengine-api")
+```
+```{python}
+ee = import("ee")          # Import the Earth Engine library
+import ee as ee
+ee$Initialize()            # Trigger the authentication
+
+np = import("numpy")       # Import Numpy 
+pd = import("pandas")      # Import Pandas
+
+import numpy as np
+
+```
+
+```{r}
+reticulate::py_config()
+reticulate::conda_install(packages = c("rasterio"))
+
+```
+
